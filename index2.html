@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+  <!-- MENU -->
+  <nav>
+    <a href style="color: skyblue"="#">Home</a> |
+    <a href style="color: skyblue"="#">Tentang Saya</a> |
+    <a href style="color: skyblue"="#">Proyek</a> |
+    <a href style="color: skyblue"="#">Kontak</a>
+  </nav>
+  <hr>
+</body>
+</html>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <container>
+        <center>
+        <h1>Portofolio Saya</h1>
+        </center>
+    </section>
+
+</body>
+</html>
+
+</head>
+<body>
+<title>Portofolio | Bibit Delmora Maheswara</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#141e30);
+  background-size:400% 400%;
+  animation:bg 12s ease infinite;
+  color:#fff;
+}
+
+@keyframes bg{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:60px 20px;
+}
+
+/* Glass Card */
+.card{
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border:1px solid rgba(255,255,255,0.25);
+  border-radius:20px;
+  padding:40px;
+  margin-bottom:50px;
+  box-shadow:0 0 25px rgba(0,255,255,0.18);
+  text-align:center;
+  animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(30px)}
+  to{opacity:1; transform:translateY(0)}
+}
+
+/* Foto Profil */
+.profile{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  border:4px solid #00ffff;
+  object-fit:cover;
+  margin-bottom:20px;
+  box-shadow:0 0 25px #00ffff;
+  transition:0.4s;
+}
+
+.profile:hover{
+  transform:scale(1.05) rotate(2deg);
+}
+
+/* Judul */
+h2{
+  font-size:30px;
+  margin-bottom:12px;
+  letter-spacing:1px;
+}
+
+p{
+  color:#e0e0e0;
+  line-height:1.8;
+  max-width:700px;
+  margin:auto;
+}
+
+/* Project */
+.projects{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap:25px;
+  margin-top:30px;
+}
+
+.project{
+  background: rgba(0, 0, 0, 0.589);
+  border:1px solid rgba(255,255,255,0.25);
+  border-radius:16px;
+  padding:25px;
+  transition:0.4s;
+  position:relative;
+  overflow:hidden;
+}
+
+.project::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(120deg,transparent,#00ffd5,transparent);
+  opacity:0;
+  transition:0.4s;
+}
+
+.project:hover::before{
+  opacity:0.3;
+}
+
+.project:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 20px #00ffff;
+}
+
+.project h3{
+  color:#00ffff;
+  margin-bottom:12px;
+  font-size:20px;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  margin-top:40px;
+}
+
+footer a{
+  color:#00ffff;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:600;
+  position:relative;
+}
+
+footer a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:0;
+  height:2px;
+  background:#00ffff;
+  transition:0.3s;
+}
+
+footer a:hover::after{
+  width:100%;
+}
+
+footer p{
+  margin-top:12px;
+  font-size:14px;
+  color:#aaa;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Tentang Saya -->
+  <div class="card">
+    <img src="bbt.jpeg" class="profile" alt="Foto Profil">
+    <h2>Tentang Saya</h2>
+    <p>
+      Perkenalkan nama saya <b>Bibit Delmora Maheswara</b>, asal sekolah
+      <b>SMK BABUNNAJAH</b> jurusan RPL. Saya fokus pada dunia
+      web desain , serta memiliki ketertarikan
+      besar di bidang teknologi.
+    </p>
+  </div>
+
+  <!-- Proyek -->
+  <div class="card">
+    <h2>Proyek Saya</h2>
+
+    <div class="projects">
+      <div class="project">
+        <h3>Proyek 1</h3>
+        <p>Membuat website dengan tema Portofolio.</p>
+      </div>
+
+      <div class="project">
+        <h3>Proyek 2</h3>
+        <p>Membuat automation n8n untuk notifikasi WhatsApp ke Discord.</p>
+      </div>
+
+      <div class="project">
+        <h3>Proyek 3</h3>
+        <p>Coming Soon.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <a href="bibiitdelmora09@gmail.com" target="_blank">email</a>
+    <a href="https://GitHub.com/https://github.com/bibiitdelmora09-dot/web.test.git">GitHub</a>
+    <a href="https://instagram.com/del_moraaa" target="_blank">Instagram</a>
+
+    <p>© 2026 Nvrl. previllage </p>
+  </footer>
+
+</div>
+
+</body>
+</html>
+
+
+

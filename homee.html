@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martabak Delmora</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+
+    /* HEADER */
+    header {
+      background: #8b0000;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    /* NAVBAR */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      background: #b22222;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 70px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #ffcc70, #ffb347);
+    }
+
+    .hero h1 {
+      font-size: 2.7em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #8b0000;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #a00000;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #8b0000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Martabak Delmora</h1>
+    <p>Manis & Telur • Lembut • Banyak Topping</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Martabak Favorit Keluarga</h1>
+    <p>Rasa premium, harga bersahabat</p>
+    <a href="menu.html" class="btn">Lihat Menu</a>
+  </section>
+
+  <section class="section">
+    <h2>Kenapa Pilih Martabak Delmora?</h2>
+
+    <div class="features">
+      <div class="card">
+        <h3>🥞 Lembut & Tebal</h3>
+        <p>Tekstur empuk dengan adonan pilihan.</p>
+      </div>
+
+      <div class="card">
+        <h3>🍫 Topping Melimpah</h3>
+        <p>Coklat, keju, kacang, dan favoritmu.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔥 Selalu Fresh</h3>
+        <p>Dibuat dadakan, bukan stok lama.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Martabak Delmora. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

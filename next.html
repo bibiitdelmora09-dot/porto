@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Martabak Delmora</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #4b2e1e, #6f4e37, #8b5a2b, #3b2415);
+  background-size: 400% 400%;
+  animation: bg 1s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+@keyframes bg {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.container {
+  width: 100%;
+  max-width: 320px;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 15px 35px rgba(201, 193, 193, 0.6);
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 13px;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.menu {
+  margin-top: 15px;
+}
+
+.menu-item {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.menu-item img:hover {
+  transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #ffb703;
+  color: #000;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.menu-name {
+  font-weight: bold;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.price {
+  color: #ffd27d;
+  font-size: 13px;
+  margin-bottom: 8px;
+
+}
+
+
+.order-btn {
+  display: inline-block;
+  width: 100%;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.order-btn:hover {
+  background: #1ebe5d;
+}
+
+/* Mobile friendly */
+@media (max-width: 480px) {
+  .container {
+    margin: 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Martabak Mantap</h1>
+  <div class="subtitle">Lembut • Manis • Mantap</div>
+
+  <div class="menu">
+
+    <div class="menu-item">
+      <span class="badge">⭐ Best Seller</span>
+      <img src="martabak-manis.jpg" alt="Martabak Manis">
+      <div class="menu-name">Martabak Manis Coklat Keju</div>
+      <div class="price">Rp 25.000.000</div>
+      <a class="order-btn" href="https://wa.me/6281234567890" target="_blank">
+        🛒 Pesan via WhatsApp
+      </a>
+    </div>
+
+    <div class="menu-item">
+      <img src="martabak.jpeg" alt="Martabak Red Velvet">
+      <div class="menu-name">Martabak Red Velvet</div>
+      <div class="price">Rp 30.000.000</div>
+      <a class="order-btn" href="https://wa.me/083833421340" target="_blank">
+        🛒 Pesan via WhatsApp
+      </a>
+    </div>
+
+    <div class="menu-item">
+      <img src="martata.jpg" alt="Martabak Telur">
+      <div class="menu-name">Martabak Telor Spesial</div>
+      <div class="price">Rp 28.000.000</div>
+      <a class="order-btn" href="https://wa.me/083138955477" target="_blank">
+        🛒 Pesan via WhatsApp
+        
+      </a>
+    </div>
+    <a href="index.html" class="btn">Kembali</a>
+<nav>
+    
+  </div>
+</div>
+
+</body>
+</html>
